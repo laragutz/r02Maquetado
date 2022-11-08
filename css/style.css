@@ -73,7 +73,23 @@ main{
     width: 80%;
     height: 60%;
     background-color: blue;
+    animation: acordeon 10s infinite;
+    animation-play-state: paused;
 }
+
+.main__slider:hover{
+    animation-play-state: running;
+}
+
+@keyframes acordeon{
+    0%{
+        width: 10%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
 .main__footer{
     width: 80%;
     height: 40%;
@@ -95,7 +111,14 @@ main{
     height: 90%;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(3,184,187,1) 0%, rgba(121,105,9,1) 1%, rgba(183,3,82,1) 11%, rgba(255,97,0,1) 97%);
+    animation: acordeon 5s infinite;
+}
 
+.main__miniimagen h3{
+    position: relative;
+    top: 30%;
+    right: 70px;
+    font-size: 18px;
 }
 
 aside{
@@ -105,7 +128,7 @@ aside{
 
 footer{
     width: 100%;
-    height: 100%;
+    height: 100px;
     background-color: crimson;
 }
 

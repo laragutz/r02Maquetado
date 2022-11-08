@@ -10,21 +10,37 @@ body{
 header{
     background-color: royalblue;
     height: 100px;
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    grid-template-rows: 8fr 2fr;
+    align-items: center;
+    justify-content: center;
 }
-nav{
-    float: right;
-    background-color: goldenrod;
-    width: 30%;
-    height: 80%;
+
+.header__logo{
+    width: 20%;
+    background-color: cornflowerblue;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+nav{
+    background-color: goldenrod;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    /*
     margin-top: 10px;
     margin-right: 10px;
+    */
     border-radius: 20px;
 }
 ul{
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: space-around;
 }
@@ -37,14 +53,49 @@ li{
     text-align: center;
 }
 
+nav li:hover{
+    background-color: silver;
+    width: 100%;
+}
+
 main{
-    background-color: white;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,39,1) 1%, rgba(3,182,183,1) 67%, rgba(3,184,187,1) 69%, rgba(0,212,255,1) 100%);;
     width: 100%;
     height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.main__slider{
+    width: 80%;
+    height: 60%;
+    background-color: blue;
+}
+.main__footer{
+    width: 80%;
+    height: 40%;
+    background-color: pink;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+}
+
+.main__miniimagen{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen{
+    width: 90%;
+    height: 90%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(3,184,187,1) 0%, rgba(121,105,9,1) 1%, rgba(183,3,82,1) 11%, rgba(255,97,0,1) 97%);
+
 }
 
 aside{

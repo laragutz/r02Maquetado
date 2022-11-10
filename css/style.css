@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -7,78 +10,82 @@ body{
     font-family: 'Open Sans', sans-serif;
     display: inline;
 }
-header{
-    background-color: royalblue;
-    height: 100px;
-}
-nav{
-    float: right;
-    background-color: goldenrod;
-    width: 30%;
-    height: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-    margin-right: 10px;
-    border-radius: 20px;
-}
-ul{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-li{
-    background-color: darkgoldenrod;
-    float: left;
-    width: 25%;
-    list-style: none;
-    border-radius: 20px;
-    text-align: center;
-}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+        
+    header{
+        background-color: royalblue;
+        height: 100px;
+    }
+    nav{
+        float: right;
+        background-color: goldenrod;
+        width: 30%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        margin-right: 10px;
+        border-radius: 20px;
+    }
+    ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    li{
+        background-color: darkgoldenrod;
+        float: left;
+        width: 25%;
+        list-style: none;
+        border-radius: 20px;
+        text-align: center;
+    }
 
-main{
-    width: 600px;
-    height: 600px;
-    background-color:blueviolet;
-    display: flex;
-    flex-direction: row;
-    align-items:center;
-    flex-wrap: wrap-reverse;
-    justify-content: space-around;
-}
-.main__cuadrado{
-    width: 40%;
-    height: 40%;
-    background-color: chocolate;
-    border: #000 1px solid;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-.main__cuadrado--minicuadrado{
-    
+    main{
+        width: 600px;
+        height: 600px;
+        background-color:blueviolet;
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .main__cuadrado{
+        width: 45%;
+        height: 45%;
+        background-color: chocolate;
+        border: #000 1px solid;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .main__cuadrado--minicuadrado{
+        
 
-    width: 30%;
-    height: 30%;
-    background-color: crimson;
-    border: #000 1px solid;
-}
+        width: 30%;
+        height: 30%;
+        background-color: crimson;
+        border: #000 1px solid;
+    }
 
 
 
-aside{
-    background-color: green;
-    width: 30%;
-}
+    aside{
+        background-color: green;
+        width: 30%;
+    }
 
-footer{
-    width: 100%;
-    height: 100%;
-    background-color: crimson;
-}
+    footer{
+        width: 100%;
+        height: 100%;
+        background-color: crimson;
+    }
 
-.fix{
-    clear: both;
+    .fix{
+        clear: both;
+    }
 }

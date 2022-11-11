@@ -1,70 +1,76 @@
-$fondomain: silver;
-$fondofooter: rgb(125, 205, 125);
-$border_black: 1px black solid;
 
-/*Extends -> reunir propiedades*/
-
-%caja {
-    border: $border_black;
+$fondo: #fff;
+$borde__negro: rgb(192, 17, 17) 1px solid;
+/*Extends -> reunir propiedad*/
+%caja{
+    border:$borde__negro;
     margin-bottom: 50px;
-    background-color: pink
+    background-color: aqua;
 }
-/*
-@mixin centrar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-*/
 %centrar{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-
-/* usando mixing */
-@mixin tam($ancho, $alto){
+/*Mixin*/
+@mixin tam($ancho, $alto) {
     width: $ancho;
     height: $alto;
 }
 
+@mixin boton($ancho,$alto,$tipo){
+    width: $ancho;
+    height: $alto;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    @if $tipo == verde{
+        background-color: green;
+    } @else if $tipo == rojo{
+        background-color: red;
+    }  @else if $tipo == amarillo{
+        background-color: yellow;
+    }
+}
 
 *{
     padding: 0;
     margin: 0;
-    background-color: cornflowerblue;
 }
 
 main{
-    background-color: $fondomain;
     height: 30vh;
+    background-color: $fondo;
 }
-
 footer{
     height: 10vh;
-    background-color: $fondofooter;
-    @include tam(100px, 100px);
+    background-color: $fondo;
+    border: $borde__negro;
+    width: 100px;
+    height: 70px;
 }
-
 .logo{
     width: 100%;
     height: 100px;
-    border: $border_black;
-    /*
-    @include caja();
-    */
     @extend %caja;
+    @include tam(500px,20px);
 }
-
 .main__titulo{
     height: 50px;
-    border: $border_black;
-    @include centrar();
+    border:$borde__negro;
+    @extend %centrar;
 }
-
 .main__imagen{
     height: 100px;
-    border: $border_black;
-    @include caja();
+    @extend %centrar;
+    .btn-1{
+        @include boton(500px,100px,rojo);
+        border: $borde__negro;
+    }
+    .btn-2{
+        @include boton(100px,20px,verde)
+    }
+    .btn-3{
+        @include boton(50px,10px,amarillo )
+    }
 }

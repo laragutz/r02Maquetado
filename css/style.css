@@ -1,41 +1,72 @@
-/*Extends -> reunir propiedades*/
-* {
-  padding: 0;
-  margin: 0;
-  background-color: cornflowerblue;
-}
-
-main {
-  background-color: silver;
-  height: 30vh;
-}
-
-footer {
-  height: 10vh;
-  background-color: rgb(125, 205, 125);
-}
-
+/*Extends -> reunir propiedad*/
 .logo {
-  width: 100%;
-  height: 100px;
-  border: 1px black solid;
-  border: 1px black solid;
+  border: rgb(192, 17, 17) 1px solid;
   margin-bottom: 50px;
-  background-color: pink;
+  background-color: aqua;
 }
 
-.main__titulo {
-  height: 50px;
-  border: 1px black solid;
+.main__imagen, .main__titulo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/*Mixin*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  height: 30vh;
+  background-color: #fff;
+}
+
+footer {
+  height: 10vh;
+  background-color: #fff;
+  border: rgb(192, 17, 17) 1px solid;
+  width: 100px;
+  height: 70px;
+}
+
+.logo {
+  width: 100%;
+  height: 100px;
+  width: 500px;
+  height: 20px;
+}
+
+.main__titulo {
+  height: 50px;
+  border: rgb(192, 17, 17) 1px solid;
+}
+
 .main__imagen {
   height: 100px;
-  border: 1px black solid;
-  border: 1px black solid;
-  margin-bottom: 50px;
-  background-color: pink;
+}
+.main__imagen .btn-1 {
+  width: 500px;
+  height: 100px;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  background-color: red;
+  border: rgb(192, 17, 17) 1px solid;
+}
+.main__imagen .btn-2 {
+  width: 100px;
+  height: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  background-color: green;
+}
+.main__imagen .btn-3 {
+  width: 50px;
+  height: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  background-color: yellow;
 }/*# sourceMappingURL=style.css.map */
